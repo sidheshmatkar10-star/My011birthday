@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">💖</text></svg>'), auto;}
+body{font-family:Poppins;background:linear-gradient(135deg,#ffd6e8,#e0c3fc);height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;}
+.card{background:white;padding:40px;border-radius:25px;box-shadow:0 20px 40px rgba(0,0,0,.15);width:100%;max-width:400px;}
+input{padding:12px;border-radius:20px;border:1px solid #ddd;width:100%;margin-top:20px;}
+button{margin-top:20px;padding:12px 30px;border:none;border-radius:25px;background:#ff8fb1;color:white;font-size:16px;}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>🔐 A Secret Gate</h1>
+<p>Only for Rasika 💝</p>
+<input id="pass" type="password" placeholder="Password">
+<button onclick="check()">Open</button>
+<p id="err" style="color:red;margin-top:10px"></p>
+</div>
+<script>
+function check(){
+if(document.getElementById('pass').value==='My011'){
+window.location.href='page1.html';
+}else{document.getElementById('err').innerText='Wrong password 💔'}
+}
+</script>
+</body>
+</html>

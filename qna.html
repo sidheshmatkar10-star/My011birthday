@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q&A</title>
+<style>
+body{margin:0;font-family:Poppins;background:linear-gradient(135deg,#ffe9f5,#ddd0ff);min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;}
+button{padding:12px 28px;border:none;border-radius:30px;font-size:16px;margin:15px;}
+#no{position:absolute;}
+</style>
+</head>
+<body>
+<div>
+<h1>Rasika… would you like me? 💕</h1>
+<button onclick="location.href='birthday.html'" style="background:#ff8fb1;color:white">Yes 💖</button>
+<button id="no" onmouseover="moveNo()" style="background:#ccc">No 🙈</button>
+</div>
+<script>
+function moveNo(){
+const btn=document.getElementById('no');
+btn.style.top=Math.random()*80+'vh';
+btn.style.left=Math.random()*80+'vw';
+}
+</script>
+</body>
+</html>
